@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <ul>
+    <ul class="menu">
         <li>
             <a href="index.html">Home</a>
         </li>
@@ -15,37 +16,46 @@
             <a href="contato.html">Contato</a>
         </li>
     </ul>
-    <h1>Entre em contato comigo</h1>
+    
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <div class="container">
+        <div class="pd-30">
+            <h1>Entre em contato comigo</h1>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+                <br>
+                <br>
+                <label for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
+        
+        <div class="pd-30">
+            <h2>Endereço:</h2>
+            <p>Av. Paulista, 100</p>
+            <p>São Paulo</p>
+        
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.869019823583!2d-46.57656538502455!3d-23.429098184748693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4152a31df8d%3A0xde7ab4ebccc428c7!2sAv.%20Nova%20Paulista%2C%201000%20-%20Jardim%20Flor%20de%20Maio%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1605898632221!5m2!1spt-BR!2sbr" 
+            width="400" 
+            height="250" 
+            frameborder="0" 
+            style="border:0;" 
+            allowfullscreen="" 
+            aria-hidden="false" 
+            tabindex="0">
+            </iframe>
+        </div>
 
-    <h2>Endereço:</h2>
-    <p>Av. Paulista, 100</p>
-    <p>São Paulo</p>
-
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.869019823583!2d-46.57656538502455!3d-23.429098184748693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4152a31df8d%3A0xde7ab4ebccc428c7!2sAv.%20Nova%20Paulista%2C%201000%20-%20Jardim%20Flor%20de%20Maio%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1605898632221!5m2!1spt-BR!2sbr" 
-    width="400" 
-    height="250" 
-    frameborder="0" 
-    style="border:0;" 
-    allowfullscreen="" 
-    aria-hidden="false" 
-    tabindex="0">
-    </iframe>
+    </div>
+    
 </body>
 </html>
