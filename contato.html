@@ -18,28 +18,28 @@
     </ul>
     
 
+    <h1 class="center">Entre em contato comigo</h1>
     <div class="container">
         <div class="pd-30">
-            <h1>Entre em contato comigo</h1>
             <form>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <br>
                 <label for="email">E-mail:</label>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <br>
+                <label for="assunto">Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+
                 <br>
-                <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-                <br>
-                <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
         </div>
         
         <div class="pd-30">
-            <h2>Endereço:</h2>
             <p>Av. Paulista, 100</p>
             <p>São Paulo</p>
         
@@ -51,11 +51,16 @@
             style="border:0;" 
             allowfullscreen="" 
             aria-hidden="false" 
-            tabindex="0">
+            tabindex="0"
+            id="mapa"
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()">
             </iframe>
         </div>
 
     </div>
+
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>
